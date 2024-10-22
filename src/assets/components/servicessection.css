@@ -1,0 +1,142 @@
+.services-section {
+    background-color: #f7f9fc; /* Light background for the section */
+  }
+  
+  .service-card1 {
+    border: none; /* Remove card border */
+    text-align: center; /* Center text in card */
+    height: 300px; /* Adjust height as needed */
+    padding-top: 30px; /* Add top padding for spacing */
+  }
+  
+  .image-wrapper1 {
+    background-color: #e9ecef; /* Gray background for image wrapper */
+    border-radius: 50%; /* Circular image background */
+    width: 80px; /* Width of the circular image */
+    height: 80px; /* Height of the circular image */
+    display: flex; /* Flex to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    margin: 0 auto; /* Center the wrapper */
+    position: relative; 
+    top: -40px; 
+  }
+  
+  .service-img {
+    border-radius: 50%; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+  
+  .service-card h2 {
+    font-size: 1.5rem; 
+    margin-top: 20px; 
+  }
+  
+  .service-card p {
+    font-size: 0.9rem; 
+  }
+  
+  .service-card .btn {
+    background-color: #007bff; 
+    color: white; 
+    margin-top: auto;
+  }
+  .footer {
+    background-color: #008cba; 
+    color: #fff;
+  }
+  
+  .footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .footer-heading p {
+  
+  }
+ 
+  .subscribe-group {
+    max-width: 320px;
+    margin-top:20px;
+    margin-bottom:20px; 
+  }
+  
+  .subscribe-input {
+    border-radius: 25;
+    border: 1px solid #fff;
+  }
+  
+  .subscribe-btn {
+    background-color:#008cba; 
+    color:#fff;
+    border-radius: 10;
+  }
+  
+  .footer-divider {
+    border-top: 1px solid #fff;
+  }
+  
+  .social-links {
+    padding-left: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+  .media-links a {
+    color:#008cba;
+    font-size:25px;
+    transition:color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color:#008cba; ; 
+  }
+  
+  
+  .tiba-health-column, .quick-links-column ,.Connect-with-us{
+    padding-left: 30px; 
+  }
+  
+  
+  .tiba-health-column {
+    margin-right: 70px; 
+  }
+  
+  
+  .quick-links-column {
+    padding-right: 20px; 
+  }
+  
+
+  @media (min-width: 768px) {
+    .quick-links-column {
+      margin-left: 50px; 
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  

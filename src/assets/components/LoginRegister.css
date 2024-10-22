@@ -1,0 +1,52 @@
+
+
+.login-register-container {
+    background-color: #0089b6;
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .mb-4 h3 {
+text-decoration-color: white;
+  }
+  
+  
+  .continue-btn {
+    flex: 1;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .continue-btn.active {
+    background-color: #0089b6;
+    color: #fff;
+  }
+  
+  .continue-btn input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  .login-btn,
+  .register-btn {
+    border-radius: 4px;
+    font-weight: bold;
+    padding:  0.5rem 1.5rem;
+    background-color: #fff;
+    border: none;
+    color: #0089b6;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color: #f0f0f0;
+  }
