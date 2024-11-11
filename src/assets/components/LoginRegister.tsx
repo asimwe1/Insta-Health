@@ -1,48 +1,63 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import "../components/LoginRegister.css";
 
 const LoginRegister: React.FC = () => {
-  const [selectedRole, setSelectedRole] = useState<'Doctor' | 'Patient'>('Doctor');
+  const navigate = useNavigate();
+  const [userType, setUserType] = useState<string | null>(null); // State to store selected user type
 
-  const handleContinueAs = (role: 'Doctor' | 'Patient') => {
-    setSelectedRole(role);
+  const handleLogin = () => {
+    navigate('/login');
+  };
+
+  const handleRegister = () => {
+    if (userType === 'Patient') {
+      navigate('/Patient');
+    } else if (userType === 'Doctor') {
+      navigate('/Register');
+    } else {
+      alert("Please select a user type before registering.");
+    }
+  };
+
+  const handleUserTypeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setUserType(event.target.value);
   };
 
   return (
-    <Container className="my-5 login-register-container">
-      <Row>
-        <Col md={6} className="mx-auto">
-          <h3 className="mb-4">Continue as:</h3>
-          <div className="d-flex mb-4">
-            <label className={`continue-btn me-2 ${selectedRole === 'Doctor' ? 'active' : ''}`}>
-              <input
-                type="radio"
-                checked={selectedRole === 'Doctor'}
-                onChange={() => handleContinueAs('Doctor')}
-              />
-              Doctor
-            </label>
-            <label className={`continue-btn ${selectedRole === 'Patient' ? 'active' : ''}`}>
-              <input
-                type="radio"
-                checked={selectedRole === 'Patient'}
-                onChange={() => handleContinueAs('Patient')}
-              />
-              Patient
-            </label>
-          </div>
-          <div className="d-flex justify-content-between">
-            <Button variant="primary" className="login-btn">
-              Login
-            </Button>
-            <Button variant="primary" className="register-btn">
-              Register
-            </Button>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+    <div className="card4-container">
+      <div className="card4">
+        <h2>Continue as:</h2>
+        <div className="radio-options">
+          <label>
+            <input 
+              type="radio" 
+              name="userType" 
+              value="Doctor" 
+              onChange={handleUserTypeChange} 
+            /> Doctor
+          </label>
+          <br />
+          <label>
+            <input 
+              type="radio" 
+              name="userType" 
+              value="Patient" 
+              onChange={handleUserTypeChange} 
+            /> Patient
+          </label>
+        </div>
+        <div className="btn-group">
+          <button className="custom-btn" onClick={handleLogin}>
+            Login
+          </button>
+          <button className="custom-btn" onClick={handleRegister}>
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 

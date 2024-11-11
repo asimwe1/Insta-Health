@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
-import './ServicesSection.css';
+import './servicessection.css';
 import { Link } from "react-router-dom";
 import logo from "./Group 1000001874.png";
 import doctor3 from "./Frame 1000003763.png";
@@ -35,7 +35,7 @@ const ServicesSection: React.FC = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div className="container">
           <a className="navbar-brand d-flex align-items-center" href="#">
-            <img src={logo} alt="Insta Health Logo" className="logo" />
+            <img src={logo} alt="Insta Health Logo" className="logo3" />
             <span className="brand-name ms-2">Insta Health</span>
           </a>
           <button
@@ -76,13 +76,19 @@ const ServicesSection: React.FC = () => {
                   Contact Us
                 </Link>
               </li>
+              <li className="nav-item">
+              <Link className="nav-link" to="/market">
+                Market place
+              </Link>
+            </li>
             </ul>
             <div className="ms-3">
               <button className="btn btn-outline-primary me-2">Login</button>
               <button className="btn btn-primary">Sign Up</button>
             </div>
           </div>
-        </div>
+        </div>o
+        
       </nav>
 
       <section className="services-section py-5">

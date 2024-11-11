@@ -12,7 +12,7 @@ const contactUs = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div className="container">
           <a className="navbar-brand d-flex align-items-center" href="#">
-            <img src={logo} alt="Insta Health Logo" className="logo" />
+            <img src={logo} alt="Insta Health Logo" className="logo5" />
             <span className="brand-name ms-2">Insta Health</span>
           </a>
           <button
@@ -53,6 +53,11 @@ const contactUs = () => {
                   Contact Us
                 </Link>
               </li>
+              <li className="nav-item">
+              <Link className="nav-link" to="/market">
+                Market place
+              </Link>
+            </li>
             </ul>
             <div className="ms-3">
               <button className="btn btn-outline-primary me-2">Login</button>

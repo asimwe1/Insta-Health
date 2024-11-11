@@ -273,8 +273,8 @@ const Market: React.FC<MarketProps> = ({ handleAddToCart }) => {
         </Row>
         <Row>
           {products.map((product) => (
-            <Col lg={3} md={4} sm={6} xs={12} key={product.id} className="mb-4">
-              <Card className="product-card h-100">
+            <Col lg={3} sm={10} xs={12} key={product.id} className="mb-4">
+              <Card className="product-card h-55">
                 <div className="image-wrapper">
                   <img
                     src={Toiletpaper}

@@ -29,19 +29,19 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSignUp = () => {
-    navigate('/signup-login');
+    navigate('/LoginRegister');
   };
 
   const handleLogin = () => {
-    navigate('/signup-login');
+    navigate('/LoginRegister');
   };
 
   return (
     <>
     <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
-      <div className="container">
+      <div className="container7">
         <a className="navbar-brand d-flex align-items-center" href="#">
-          <img src={logo} alt="Insta Health Logo" className="logo" />
+          <img src={logo} alt="Insta Health Logo" className="logo1" />
           <span className="brand-name ms-2">Insta Health</span>
         </a>
         <button
@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
             <button className="btn btn-primary btn-lg me-2">
               Book an Appointment
             </button>
-            <button className="btn btn-outline-primary btn-lg">
+            <button className="btn btn-outline3-primary btn-lg">
               Download our Mobile App
             </button>
           </div>
@@ -328,7 +328,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="col-md-6">
-            <Form className="form-section">
+            <Form className="form-section1">
               <Form.Group controlId="formFullName" className="mb-4">
                 <Form.Control type="text" placeholder="Full Name" />
               </Form.Group>

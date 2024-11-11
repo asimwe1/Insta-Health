@@ -11,6 +11,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import paymentDetails from "./assets/components/PaymentDetails";
 import PaymentDetails from "./assets/components/PaymentDetails";
 import LoginRegister from './assets/components/LoginRegister';
+import Register from './assets/components/Register';
+import DoctorRegister from './assets/components/DoctorRegister';
+import Targetpage from './assets/components/target-page';
+import Login from './assets/components/login';
+import PatientRegistration from "./assets/components/Patient";
 
 const App: React.FC = () => {
   interface Product {
@@ -46,7 +51,14 @@ const App: React.FC = () => {
                 <Route path="/cart" element={<Cart cartItems={cartItems} handleRemoveFromCart={handleRemoveFromCart} />} />
                 <Route path="/PaymentDetails" element={<PaymentDetails cartItems={[]}/>}></Route>
                 
-        <Route path="/signup-login" element={<LoginRegister />} />
+        <Route path="/LoginRegister" element={<LoginRegister />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/DoctorRegister" element={<DoctorRegister />} />
+        <Route path="/target-page" element={<Targetpage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/Patient" element={<PatientRegistration />} />
+
+        
                 
               </Routes>
         

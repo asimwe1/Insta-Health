@@ -37,6 +37,9 @@
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
+  .package-card p{
+    color: #008cba; 
+  }
   
   .package-card .price {
     font-size: 2.2rem;
