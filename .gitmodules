@@ -1,4 +1,4 @@
 [submodule "Frontend"]
 	path = Frontend
-	url = git@github.com:Gemimah/Insta-Health.git
+	url = git@github.com:asimwe1/Insta-Health-frontend.git
 	branch = frontend
