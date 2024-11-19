@@ -1,0 +1,21 @@
+{
+  "name": "JS Project Codespace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",  // Use a Node.js image compatible with your JS project
+  "postCreateCommand": "npm install",  // Install dependencies after creating the container
+  "forwardPorts": [3000, 8080],  // Forward any ports your app uses (modify as necessary)
+  "extensions": [
+    "dbaeumer.vscode-eslint",  // For linting
+    "esbenp.prettier-vscode",  // For code formatting
+    "ms-vscode.node-debug2",  // For debugging Node.js
+    "ms-azuretools.vscode-docker"  // Optional, for Docker integration if used
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"  // Optional, to bind your local workspace to the container
+  ],
+  "settings": {
+    "editor.tabSize": 2,  // JS convention
+    "editor.insertSpaces": true,
+    "javascript.preferences.quoteStyle": "single"  // Optional, customize code style
+  },
+  "remoteUser": "vscode"  // Ensures the container runs as the vscode user
+}
